@@ -1,30 +1,53 @@
-# test-coaster
+# Resin Coaster Color Tester
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A React/Next.js application for testing and visualizing different resin coaster color combinations with metallic accents.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/callmetaks-projects/v0-test-coaster)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/TIgc3Y0bFfF)
+## Features
 
-## Overview
+- Interactive color selection for base coaster colors
+- Metallic accent options (Gold, Silver, Copper)
+- Real-time preview of color combinations
+- Responsive design
+- Static export ready for GitHub Pages
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Development
+
+\`\`\`bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+\`\`\`
 
 ## Deployment
 
-Your project is live at:
+This project is configured for static export and can be deployed to GitHub Pages automatically via GitHub Actions.
 
-**[https://vercel.com/callmetaks-projects/v0-test-coaster](https://vercel.com/callmetaks-projects/v0-test-coaster)**
+### Setup Instructions:
 
-## Build your app
+1. Fork or clone this repository
+2. Go to your repository settings on GitHub
+3. Navigate to "Pages" in the left sidebar
+4. Under "Source", select "GitHub Actions"
+5. Push to the main branch to trigger deployment
 
-Continue building your app on:
+The site will be available at: `https://[your-username].github.io/resin-coaster-tester/`
 
-**[https://v0.dev/chat/projects/TIgc3Y0bFfF](https://v0.dev/chat/projects/TIgc3Y0bFfF)**
+## Project Structure
 
-## How It Works
+- `/app` - Next.js app router pages
+- `/components` - Reusable React components
+- `/images` - Static image assets
+- `/.github/workflows` - GitHub Actions deployment configuration
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## Technologies Used
+
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
